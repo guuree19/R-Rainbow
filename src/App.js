@@ -26,7 +26,7 @@ function App() {
       {colorMap}
       <ColorForm addColor={addColor} />
         {colors.map((color, i) => 
-        <ColorBlock key='color'   color={color} />
+        <ColorBlock key={color.toString()} value={color} />
         )}
     </div>
 
